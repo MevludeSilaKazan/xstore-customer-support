@@ -9,7 +9,7 @@ An intelligent, multilingual customer support chatbot built with **LangGraph** f
 
 ## 🎬 Live Demo
 
-👉 **[Try it now!](https://mevludesilakazan-xstore-customer-support.streamlit.app)**
+👉 **[Try it now!](https://xstore-customer-support.streamlit.app)**
 
 ## ✨ Features
 
