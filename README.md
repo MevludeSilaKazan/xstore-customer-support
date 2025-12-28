@@ -180,7 +180,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/MevludeSilaKazan)
+- GitHub: [@MevludeSilaKazan](https://github.com/MevludeSilaKazan)
 
 ---
 
