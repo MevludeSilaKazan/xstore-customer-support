@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  elasticsearch:
+    image: elasticsearch:8.11.0
+    container_name: xstore-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
+  app:
+    build: .
+    container_name: xstore-app
+    ports:
+      - "8501:8501"
+    env_file: .env
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+
+  admin:
+    build: .
+    container_name: xstore-admin
+    ports:
+      - "8502:8502"
+    env_file: .env
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    command: streamlit run admin.py --server.port 8502 --server.address 0.0.0.0
+
+volumes:
+  elasticsearch_data:
