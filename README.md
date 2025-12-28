@@ -1,10 +1,15 @@
 # 🛒 XStore Customer Support AI Agent
 
 An intelligent, multilingual customer support chatbot built with **LangGraph** for e-commerce clothing stores.
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit-FF4B4B?style=for-the-badge)](https://xstore-customer-support.streamlit.app)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![LangGraph](https://img.shields.io/badge/LangGraph-Latest-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## 🎬 Live Demo
+
+👉 **[Try it now!](https://mevludesilakazan-xstore-customer-support.streamlit.app)**
 
 ## ✨ Features
 
